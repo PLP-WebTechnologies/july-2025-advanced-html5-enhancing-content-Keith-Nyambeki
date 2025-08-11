@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Assignment</title>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Page</h1>
+    <p>This page demonstrates more html content on adding lists, tables, media, and a complete HTML5 form.</p>
+  </header>
+
+  <section>
+    <h2>My Favorite Music Artists</h2>
+    <ul>
+      <li>Rihanna</li>
+      <li>Drake</li>
+      <li>Tyler the Creator</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Favorite Movies</h2>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Game of Thrones</td>
+          <td>Drama</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <td>Shameless</td>
+          <td>Comedy</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td>The Terminator</td>
+          <td>Action</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Favorite Song</h2>
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Sample Video</h2>
+    <video controls width="320">
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+    <h2>Just an Image</h2>
+    <img src="https://via.placeholder.com/300" alt="Placeholder image" width="300">
+    
+  </section>
+
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" required>
+        <option value="">--Select--</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Tanzania">Tanzania</option>
+      </select><br><br>
+
+      <label>Hobbies:</label><br>
+      <input type="checkbox" id="reading" name="hobbies" value="Reading">
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="sports" name="hobbies" value="Sports">
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="hobbies" value="Music">
+      <label for="music">Music</label><br><br>
+
+      <label for="id">Student ID (Read-only):</label><br>
+      <input type="text" id="id" name="id" value="12345" readonly><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+</body>
+</html>
